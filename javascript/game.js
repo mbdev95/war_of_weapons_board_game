@@ -279,6 +279,7 @@ class Game {
     }
     //Have message coming on the screen here saying the fight is about to begin
     console.log("Get ready to fight.");
+    //we are 
     const inactivePlayerScoreSpan = $(`.${this.inactivePlayer()}Score`);
     const activePlayerScoreSpan = $(`.${this.activePlayer()}Score`);
     $(`.btn-attack`).on("click", function(event) {    
