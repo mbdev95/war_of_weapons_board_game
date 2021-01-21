@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>War of Weapons Board Game</title>
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- custom css -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>       
+        <header>               
+            <div class="container pl-0 pr-0"><!-- container to give header auto margins -->                
+                <h1>War of Weapons</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container d-flex justify-content-between align-items-center"><!-- Conatiner div for wall of weapons and game instructions modal window -->
+                <button class="btn btn-light rulesButton">New Game</button>
+                <!-- Wall of Weapons -->
+                <div class="mt-3" id="weaponsInfo">
+                    <div class="weaponWrapper" id="weaponWrapper1">
+                        <h4 class="weaponName">Hammer</h4>
+                        <img src="img/wall_hook.svg" class="wallHook" alt="Wall Hook">
+                        <img src="img/hammer.svg" alt="Hammer">
+                        <p class="mt-2 mb-0 damage">Damage: 20</p>
+                    </div> 
+                    <div class="weaponWrapper" id="weaponWrapper2">
+                        <h4 class="weaponName">Crossbow</h4>
+                        <img src="img/wall_hook.svg" class="wallHook" alt="Wall Hook">
+                        <img src="img/crossbow.svg" alt="Crossbow">
+                        <p class="mt-2 mb-0 damage">Damage: 30</p>                       
+                    </div> 
+                    <div class="weaponWrapper" id="weaponWrapper3">
+                        <h4 class="weaponName">Sword</h4>
+                        <img src="img/wall_hook.svg" class="wallHook" alt="Wall Hook">
+                        <img src="img/sword.svg" alt="Sword">
+                        <p class="mt-2 mb-0 damage">Damage: 40</p>                       
+                    </div> 
+                    <div class="weaponWrapper" id="weaponWrapper4">
+                        <h4 class="weaponName">Gun</h4>
+                        <img src="img/wall_hook.svg" class="wallHook" alt="Wall Hook">
+                        <img src="img/gun.svg" alt="Gun">
+                        <p class="mt-2 mb-0 damage">Damage: 50</p>
+                    </div>                                          
+                </div>
+                <!-- /Wall of Weapons -->
+                <!-- Rules button to bring up bootstrap modal showing game's instructions -->
+                <button class="btn btn-light rulesButton" data-toggle="modal" data-target="#exampleModal">Rules</button>
+                <!-- Instruction Modal Window -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title" id="exampleModalLabel">Game Rules</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <ol>
+                              <li>You can move 1 to 3 spaces vertically and horizontally.</li>
+                              <hr>
+                              <li>Collect weapons to increase your damage score when attacking the opponent.</li>
+                              <hr>
+                              <li>You can attack or defend. Defending will cause you half the damage, when your opponent attacks, but will give no damage to your opponent.</li>
+                              <hr>
+                              <li>When you are next to your opponent you can attack or defend.</li>
+                              <hr>
+                              <li>The first player to have a score of zero loses.</li>
+                          </ol>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- / Instruction Modal Window -->
+            </div>
+            <!-- main content wrapper div -->
+            <div class="d-flex justify-content-around container">
+                <!-- Player 1 Information Board -->
+                <div class="mt-3 position-relative player_1Info">
+                        <h2>Player 1</h2>
+                        <img src="img/player_banner.svg" alt="Player Banner">
+                        <img src="img/soldier.svg" alt="soldier">
+                        <button type="button" class="btn btn-primary btn-attack" id="player_1Attack">Attack</button>
+                        <button type="button" class="btn btn-danger" id="player_1Defend">Defend</button>
+                        <img src="img/player_banner.svg" alt="Player Banner">
+                        <h3>Score</h3>
+                        <span class="badge badge-pill badge-info player_1Score">100</span>
+                        <img src="img/player_banner.svg" alt="Player Banner">
+                        <h3>Damage</h3>
+                        <p>10</p>
+                        <img src="img/player_banner.svg" alt="Player Banner">
+                </div>
+                <!-- /Player 1 Information Board -->
+                <!-- board game -->
+                <div class="lead mt-4 mb-4" id="board"> <!-- div containing all 100 box divs for 10 x 10 boardgame -->
+                <!-- board game squares generated with JS -->
+                </div>
+                <!-- /board game -->
+                <!-- Player 2 Information Board -->
+                <div class="d-flex flex-column mt-3 position-relative player_2Info">
+                    <h2>Player 2</h2>
+                    <img src="img/player_banner.svg" alt="Player Banner">
+                    <img src="img/warrior.svg" alt="warrior"> 
+                    <button type="button" class="btn btn-primary btn-attack" id="player_2Attack">Attack</button>
+                    <button type="button" class="btn btn-danger" id="player_2Defend">Defend</button>
+                    <img src="img/player_banner.svg" alt="Player Banner">
+                    <h3>Score</h3>
+                    <span class="badge badge-pill badge-info player_2Score">100</span> 
+                    <img src="img/player_banner.svg" alt="Player Banner">
+                    <h3>Damage</h3> 
+                    <p>10</p>
+                    <img src="img/player_banner.svg" alt="Player Banner"> 
+                </div>
+                <!-- /Player 2 Information Board -->
+            </div>
+            <!-- end of main content wrapper div -->
+        </main>
+        <!-- Footer with copyright and author information a-->
+        <footer class="lead">
+            <div class="container d-flex justify-content-between align-items-center px-0"><!-- footer container for left and right margins -->
+                <div class="mr-1 mr-sm-3 py-1 py-sm-0";>&copy;2020 War of Weapons</div>
+                <div class="ml-2 ml-sm-3 py-1 py-sm-0">Game by Mark Bucholski</div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+        <!-- bootstrap js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!-- custom js -->
+        <script src="/javascript/script.js"></script>
+        <script src="/javascript/board.js"></script>
+        <script src="/javascript/game.js"></script>
+        <script src="/javascript/player.js"></script>
+        <script src="/javascript/score.js"></script>
+        <script src="/javascript/space.js"></script>
+    </body>
+</html> 

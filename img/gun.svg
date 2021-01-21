@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.0" viewBox="0 0 136.7 91.403" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient id="e" x1="-482.48" x2="-486.68" y1="1250.9" y2="1251.1" gradientTransform="scale(1.1536 .86686)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+<linearGradient id="f" x1="-602.62" x2="-597.02" y1="1017.2" y2="1016.1" gradientTransform="scale(.9004 1.1106)" gradientUnits="userSpaceOnUse" xlink:href="#c"/>
+<linearGradient id="g" x1="-572.38" x2="-571.65" y1="1163.3" y2="1164.3" gradientTransform="matrix(1.0899 0 0 .91756 0 -.40356)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00739a" offset="0"/>
+<stop stop-color="#025b72" offset="1"/>
+</linearGradient>
+<linearGradient id="h" x1="-482.92" x2="-478.12" y1="1276" y2="1276" gradientTransform="matrix(1.1536 0 0 .86686 0 -6)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+<linearGradient id="i" x1="-576.17" x2="-578.69" y1="1182.5" y2="1185.5" gradientTransform="scale(1.0899 .91756)" gradientUnits="userSpaceOnUse" xlink:href="#b"/>
+<linearGradient id="j" x1="-579.61" x2="-579.72" y1="1174.8" y2="1171" gradientTransform="scale(1.0899 .91756)" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+<stop stop-color="#000102" offset="0"/>
+<stop stop-color="#bae3e7" offset="1"/>
+</linearGradient>
+<linearGradient id="b">
+<stop stop-color="#00739a" offset="0"/>
+<stop stop-color="#bae3e7" offset="1"/>
+</linearGradient>
+<linearGradient id="k" x1="-578.36" x2="-572.32" y1="1174" y2="1173.8" gradientTransform="scale(1.0899 .91756)" gradientUnits="userSpaceOnUse" xlink:href="#b" spreadMethod="reflect"/>
+<linearGradient id="l" x1="-316.83" x2="-316.42" y1="1881.4" y2="1881.4" gradientTransform="scale(1.7455 .5729)" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+<stop stop-color="#00739a" offset="0"/>
+<stop stop-color="#004b65" offset="1"/>
+</linearGradient>
+<linearGradient id="a">
+<stop stop-color="#00739a" offset="0"/>
+<stop stop-color="#fff" offset="1"/>
+</linearGradient>
+<linearGradient id="m" x1="-304.08" x2="-302.51" y1="2034" y2="2034" gradientTransform="scale(1.8619 .53709)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+<radialGradient id="d" cx="-221.82" cy="2840" r="12.352" gradientTransform="scale(2.6342 .37962)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00a5dd" offset="0"/>
+<stop stop-color="#00739a" offset="1"/>
+</radialGradient>
+<linearGradient id="c">
+<stop stop-color="#fff" offset="0"/>
+<stop stop-color="#0e4659" offset="1"/>
+</linearGradient>
+<linearGradient id="n" x1="-598.26" x2="-589.17" y1="1013.9" y2="1011.1" gradientTransform="scale(.9004 1.1106)" gradientUnits="userSpaceOnUse" xlink:href="#c"/>
+</defs>
+<g transform="translate(-14.507 -35.233)">
+<g transform="translate(648.66 -1029.8)">
+<path d="m-521.09 1155.9c-4.36-0.6-13.38 3.3-12.73-3.8-0.47-6.5-7.8-38-10.67-42.2-3.49-0.7-7.05 0.9-14.22 0.3-4.37-0.4-10.48-1-18.03-2.9 1.11-3.7 0.94-4.5-0.43-9.3-0.59-2.5-0.9-2.7-8-4.9l-38.05 0.4-0.33-4.5h-7.37l-0.1-20.9h13.76l1.11 1.3 52.52-0.1-0.05-0.7h38.35l2.37-3.5 2.65 3.9c3.46 4.7 12.82-0.9 12.81 5.9-2.1 5.5 1.62 12.1 7.04 14.8 3.05 0.9 4.47 4.9-0.16 4.9-5.61 0.4-6.58 3-8.8 8.1-2.25 5.1 10.63 31.5 11.97 40.7-0.13 11-18.04 12.9-23.64 12.5zm-25.95-59.4c-3.57-0.9-5.97-0.5-6.12 0.8-0.33 3-6.11 6.4-8.56 7.8-5.74 0.4 7.64-5.3 2.28-9.4-4.3-1.8-13.27-0.8-15.08 1.5-1.76 2.2 3.35 10.6 8.79 11 9.3 1.2 25.97 3.7 18.69-11.7z"/>
+<path d="m-546.33 1088.5 15.85 62.9s35.86 1.4 29.96-12.4l-15.83-43.5c-5.36-3.8-3.37-5.1-9.91-5.6-6.53-0.5-20.88-4.6-20.07-1.4z" fill="url(#n)" fill-rule="evenodd"/>
+<path d="m-542.14 1094.9 14.36 53.7c3.86 2.9 30.01 1.2 24.63-9.6l-12.92-37.5c-4.7-3.4-14.45-10.1-16.97-8.8-2.52 1.4-9.84-0.6-9.1 2.2z" fill="#082c3d" fill-rule="evenodd"/>
+<path d="m-618.57 1073.2 55.69 0.1 2.36 9.1-57.86 0.1-0.19-9.3z" fill="url(#d)" fill-rule="evenodd"/>
+<path d="m-507.05 1090.8c-1.58-5.8-0.69-4.2-8.08-5.5l7.14 0.1c1.27 1.5 3.13 5.8 5.08 7.2-3.05 0-4.38 4-5.31 8.3 0.14-3.2 1.53-8.8 1.17-10.1z" fill="#00739a" fill-rule="evenodd"/>
+<path d="m-523.4 1086.7 11.65-0.3c1.93 0 3.29-0.2 3.29 1.9s-2.87 4.2-3.8 8.5c-2.03-1.8-13.08-10.1-11.14-10.1z" fill="#0e4659" fill-rule="evenodd"/>
+<path d="m-617.99 1083.3h54.93l0.01 10-14.73-0.2c-0.89-2.8-1.32-4.3-5.79-4.5l-34.11 0.4-0.31-5.7z" fill="url(#m)" fill-rule="evenodd"/>
+<path d="m-529.75 1073.2h-33.01l2.43 9.2h34.14l-3.56-9.2z" fill="url(#l)" fill-rule="evenodd"/>
+<path d="m-631.06 1071.3c4.52 0.1 10.34 0.8 12.58 2l0.15 9.2c-3.58-0.1-7.94-0.6-12.65-0.5l-0.08-10.7z" fill="url(#k)" fill-rule="evenodd"/>
+<path d="m-633.62 1069.8h2.64l0.04 9-2.68-0.1c-0.63-3-0.78-6.1 0-8.9z" fill="url(#j)" fill-rule="evenodd"/>
+<path d="m-630.95 1083.2 12.89 0.1 0.21 4.1c-3.58 0-8.35 0-13.07 0.1l-0.03-4.3z" fill="url(#i)" fill-rule="evenodd"/>
+<path d="m-569.17 1094.9c-3.97 0.5-7.7 1.8-5.22 6.1 2.43 4.1 3 7.3 15.5 8.8-6.85-1-13.66-2-17.76-2.8 0.34-2.7 0.63-1.3 0.55-4s-1.39-4.5-1.56-8l8.49-0.1z" fill="#00739a" fill-rule="evenodd"/>
+<path d="m-551.55 1095.8c-1.51 0.6-0.2 0-1.48 0.8-3.27 3.3 1.41 1.5-10.35 8 3.12-2.7 4.76-5.4 4.59-8.9l7.24 0.1z" fill="url(#h)" fill-rule="evenodd"/>
+<path d="m-630.85 1068.1 4.3-2c3.4-1.4 6.04-0.5 6.32 2h-10.62z" fill="url(#g)" fill-rule="evenodd"/>
+<path d="m-533.25 1152.6c-1.21-10.2-6.42-31-9.1-39.8-4.56-7.6 3.11 11.7 5.38 24.3 2.28 12.6 1.13 19.3 3.72 15.5z" fill="url(#f)" fill-rule="evenodd"/>
+<path d="m-526.81 1073.4 13.1-0.1c1.94 0 3.8 6.9 3.8 9-3.29 0.6-10.98 0.2-12.92 0.2-2.03-1.8-5.92-9.1-3.98-9.1z" fill="#0e4659" fill-rule="evenodd"/>
+<path d="m-546.24 1081.9c1.21 0.5 1.57 1.2 2.03 2.7l-16.92 3.5c-1.42-1.5-0.86-3.1-0.43-3.8l15.32-2.4z" fill="url(#e)" fill-rule="evenodd"/>
+</g>
+</g>
+<metadata>
+<rdf:RDF>
+<cc:Work>
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+<dc:publisher>
+<cc:Agent rdf:about="http://openclipart.org/">
+<dc:title>Openclipart</dc:title>
+</cc:Agent>
+</dc:publisher>
+<dc:title>Gun</dc:title>
+<dc:date>2009-04-02T02:10:04</dc:date>
+<dc:description>A blue tinted gun by Alex Fernandez</dc:description>
+<dc:source>https://openclipart.org/detail/23740/gun-by-anonymous-23740</dc:source>
+<dc:creator>
+<cc:Agent>
+<dc:title>Anonymous</dc:title>
+</cc:Agent>
+</dc:creator>
+<dc:subject>
+<rdf:Bag>
+<rdf:li>blue</rdf:li>
+<rdf:li>gun</rdf:li>
+<rdf:li>metal</rdf:li>
+<rdf:li>tool</rdf:li>
+<rdf:li>weapon</rdf:li>
+<rdf:li>weapons</rdf:li>
+</rdf:Bag>
+</dc:subject>
+</cc:Work>
+<cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+<cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+<cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+<cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+</cc:License>
+</rdf:RDF>
+</metadata>
+</svg>

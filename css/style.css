@@ -1,0 +1,354 @@
+/* CUSTOM CSS */
+
+/* Adding Fonts */
+@font-face {
+    font-family: "silenceArmyWW1";
+    src: url("../fonts/StencilArmyWWI.eot"),
+         url("../fonts/StencilArmyWWI.otf"),
+         url("../fonts/StencilArmyWWI.svg"),
+         url("../fonts/StencilArmyWWI.ttf"),
+         url("../fonts/StencilArmyWWI.woff"),
+         url("../fonts/StencilArmyWWI.woff2");
+}
+
+/* Avoiding X-axis Overflow/Scrolling */
+html {
+    overflow-x: hidden;
+    position: absolute;
+    left: -8px;
+}
+
+/* Universal Styling */
+* {
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    background: #cabebe;
+    background-image: url("../img/war_image.jpg");
+    height: 100vh;
+    margin: 0px;
+    font-family: "silenceArmyWW1", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+/* Header Styles */
+header {
+    min-width: 100vw;
+    text-align: center;
+    background-color: #160b8c;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background-color: black;
+    margin: 0px;
+}
+
+/* Weapons and Buttons */
+.rulesButton {
+    width: 116.25px;
+    height: 40px;
+}
+
+.modal-body ol hr {
+    background-color: rgb(145, 139, 139);
+}
+
+.modal-content {
+ background-color: #aebac4;
+}
+
+#weaponsInfo {
+    width: 52.7%;
+    height: 143px;
+    background: linear-gradient(to left, rgba(231, 214, 214, 0.274), rgba(201, 192, 192, 0.377) 50%, rgba(151, 147, 147, 0.404) 75%, rgba(133, 128, 128, 0.534) 100%);
+    border: solid 3px black;
+    position: relative;
+}
+
+.weaponWrapper {
+    top: 0px;
+    width: 122.5px;
+    height: 143px;
+}
+
+#weaponWrapper1 {
+    left: 30px;
+}
+
+#weaponWrapper2 {
+    left: 172.5px;
+}
+
+#weaponWrapper3 {
+    left: 315px;
+}
+
+#weaponWrapper4 {
+    left: 455px;
+}
+
+.weaponWrapper,
+.weaponName,
+.wallHook,
+img[src^="img/hammer"], 
+img[src^="img/crossbow"], 
+img[src^="img/sword"],
+img[src^="img/gun"],
+.damage, 
+img[src^="img/warrior"], 
+img[src^="img/soldier"],
+.position-relative button,
+h2,
+h3,
+.badge-pill,
+.position-relative p {
+    position: absolute;
+}
+
+.weaponName {
+    top: 5px;
+}
+
+.wallHook {
+    width: 45px;
+    top: 33px; 
+}
+
+img[src^="img/hammer"], 
+img[src^="img/crossbow"], 
+img[src^="img/sword"],
+img[src^="img/gun"] {
+    height: 50px;
+    transition: transform 1s ease-out 0.2s;
+}
+
+
+img[src^="img/hammer"] {
+    top: 55px;
+    left: 17px;
+}
+
+img[src^="img/hammer"]:hover {
+    transform: rotate(-90deg);
+}
+
+img[src^="img/crossbow"] {
+    top: 50px;
+    left: 15px;
+}
+
+img[src^="img/crossbow"]:hover {
+    transform: rotate(-45deg);
+}
+
+img[src^="img/sword"] {
+    top: 50px;
+    left: 30px;
+}
+
+img[src^="img/sword"]:hover {
+    transform: rotate(30deg) rotate(-90deg);
+}
+
+img[src^="img/gun"] {
+    top: 47px;
+}
+
+img[src^="img/gun"]:hover {
+    transform: rotate(-25deg);
+}
+
+.damage {
+    top: 100px;
+}
+
+/* Board Game */
+#board {
+    display: grid;
+    background: #cabebe;
+    border: 3px solid black;
+    grid-template-rows: repeat(10, 58px);
+    grid-template-columns: repeat(10, 58px);
+    width: 586px;
+    padding: 0px;
+}
+
+.grid-item {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    position: relative;
+}
+
+.obstacle {
+    background: url(../img/pylon.svg) no-repeat center;
+}
+
+.player1Img {
+    height: 65px;
+}
+
+.player2Img {
+    height: 55px;
+}
+
+.player1Img, .player2Img {
+    z-index: 20;
+}
+
+.hammer, .crossbow, .sword, .gun {
+    position: absolute;
+    z-index: 10;
+}
+
+.hammer {
+    height: 53px;
+    top: 1.5px;
+    left: 10px;
+    right: 0px;
+    bottom: 1.5px;
+}
+
+.crossbow {
+    height: 55px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.sword {
+    height: 35px;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.gun {
+    height: 35px;
+    top: 10px;
+    left: 2.25px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.clickableSpace {
+    background: #7791aa;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.clickableSpace:hover {
+    background: #88afd3;
+    transform: scale(1.05);
+}
+
+/* Player Styles */
+h2 {
+    left: 135px;
+    top: 50px;
+}
+
+img[src^="img/player_banner"] {
+    height: 140px;
+    width: 400px;
+}
+
+img[src^="img/warrior"], img[src^="img/soldier"] {
+    transition: transform 1s ease-out 0.2s;
+    height: 100px;
+    top: 160px;
+    left: 165px;
+}
+
+img[src^="img/warrior"]:hover, img[src^="img/soldier"]:hover {
+    transform: scale(1.3);
+}
+
+.position-relative button {
+    max-width: 100px;
+    font-size: 1.2em;
+    letter-spacing: 0.1mm;
+    top: 190px;
+}
+
+.position-relative button:nth-child(odd) {
+    left: 60px;
+}
+
+.position-relative button:nth-child(even) {
+    left: 246px;
+}
+
+h3:nth-of-type(1) {
+    top: 311px;
+    left: 160px;
+}
+
+h3:nth-of-type(2) {
+    top: 455px;
+    left: 143px;
+}
+
+.badge-pill {
+    font-size: 1.2em;
+    letter-spacing: 0.3mm;
+    width: 100px;
+    top: 350px;
+    left: 148px
+}
+
+.position-relative p {
+    top: 490px;
+    left: 185px;
+    font-size: 1.6em;
+    color: #6e5a5a;
+}
+
+/* Footer Styles */
+footer {
+    height: 50px;
+    background: rgba(22, 11, 140, 0.8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100wh;
+    font-family: "monospace", Courier, 'Courier New';
+    margin-top: auto;
+}
+
+/* Media Queries */
+
+@media (min-width: 576px) {
+    h1 {
+       font-size: 3.5em;
+    }
+    .position-relative {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+       font-size: 4.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+       font-size: 5em;
+    }
+}
