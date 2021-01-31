@@ -52,10 +52,14 @@ h1 {
     margin: 0px;
 }
 
-/* Weapons and Buttons */
+/* Weapons Banner */
 .rulesButton {
     width: 116.25px;
     height: 40px;
+}
+
+.modal {
+ z-index: 9999;
 }
 
 .modal-body ol hr {
@@ -180,6 +184,7 @@ img[src^="img/gun"]:hover {
     grid-template-columns: repeat(10, 58px);
     width: 586px;
     padding: 0px;
+    position: relative;
 }
 
 .grid-item {
@@ -191,10 +196,12 @@ img[src^="img/gun"]:hover {
     position: relative;
 }
 
+/* Obstacles randomly placed on board as background image as a part of js initialization */
 .obstacle {
     background: url(../img/pylon.svg) no-repeat center;
 }
 
+/* Player images randomly placed on board as html in js initialization*/
 .player1Img {
     height: 65px;
 }
@@ -207,6 +214,7 @@ img[src^="img/gun"]:hover {
     z-index: 20;
 }
 
+/* Weapons randomly placed on board as a part of js initializtion */
 .hammer, .crossbow, .sword, .gun {
     position: absolute;
     z-index: 10;
@@ -244,6 +252,7 @@ img[src^="img/gun"]:hover {
     bottom: 0px;
 }
 
+/* Clickable space class added using JS to visually show which spaces the active player can move onto */
 .clickableSpace {
     background: #7791aa;
     cursor: pointer;
@@ -255,7 +264,50 @@ img[src^="img/gun"]:hover {
     transform: scale(1.05);
 }
 
-/* Player Styles */
+/* Styling for the transformation's transitions which occur when the fight is begining */
+.startFightImageOpacityZero {
+    position: absolute;
+    display: relative;
+    background: #cabebe;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1000;
+    opacity: 0;
+}
+
+
+.fightingTextOpacityZero {
+    z-index: 3000;
+    position: absolute;
+    top: 46%;
+    margin-left: 20px;
+    opacity: 0;
+}
+
+.startFightImageOpacityOne {
+    opacity: 0.9;
+    transition: opacity 1s ease-out;
+}
+
+.fightingTextOpacityOne {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.fightingImageGone {
+    background: red;
+    opacity: 0;
+    transition: background 2s ease-out, opacity 2s ease-out 3s;
+}
+
+.fightingTextGone {
+    opacity: 0;
+    transition: opacity 2s ease-out 3s;
+} 
+
+/* Player Banner Styles */
 h2 {
     left: 135px;
     top: 50px;
@@ -317,6 +369,98 @@ h3:nth-of-type(2) {
     color: #6e5a5a;
 }
 
+/* Winning Message */
+.gameOverMessage {
+    background: rgb(146, 154, 219);
+    border: solid black 2px;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left: 140px;
+    top: 9.9%;
+    display: grid;
+    z-index: 10000;
+}
+
+.gameOverMessage, 
+.gameOverMessage h4, 
+.player1WinnerImg, 
+.player2WinnerImg,
+img[src$="trophy.svg"], 
+.gameOverMessage p, 
+.btn-playAgain,
+.btn-close {
+    position: absolute;
+}
+
+.gameOverMessage h4 {
+    margin-bottom: 0px;
+    top: 18px;
+    left: 27.5%;
+}
+
+.player1WinnerImg {
+    width: 135px;
+    left: 16%;
+    bottom: 113px;
+}
+
+.player1WinnerScaleOutImg {
+    transform: scale(1.15);
+    transition: transform 1s ease-in-out;
+}
+
+.player1WinnerScaleInImg {
+    transform: scale(1.0);
+    transition: transform 1s ease-in-out;
+}
+
+.player2WinnerImg {
+    width: 102px;
+    left: 16%;
+    bottom: 128px;
+}
+
+.player2WinnerScaleOutImg {
+    transform: scale(1.15);
+    transition: transform 1s ease-in-out;
+}
+
+.player2WinnerScaleInImg {
+    transform: scale(1.0);
+    transition: transform 1s ease-in-out;
+}
+
+img[src$="trophy.svg"] {
+    width: 60px;
+    top: 90px;
+    right: 24%;
+    opacity: 0;
+}
+
+img[class="trophyOpacity1"] {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out 1s;
+}
+
+.gameOverMessage p {
+    bottom: 80px;
+    margin-bottom: 0px;
+    left: 28.5px;
+}
+
+.btn-playAgain {
+    bottom: 25px;
+    left: 10%;
+
+}
+
+.btn-close {
+    bottom: 25px;
+    right: 10%;
+    width: 109.59px;
+}
+
 /* Footer Styles */
 footer {
     height: 50px;
@@ -331,7 +475,6 @@ footer {
 }
 
 /* Media Queries */
-
 @media (min-width: 576px) {
     h1 {
        font-size: 3.5em;

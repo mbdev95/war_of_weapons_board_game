@@ -5,7 +5,7 @@ class Board {
       this.rows = 10;
       this.spaces = this.spaces();
     }
-// Board - spaces() - loops through all the spaces and at each space on the board a new space class object is called and stored in a columns array.  All ten columns are in turn stored in a spaces array.
+// Board - spaces() - loops through all the spaces and at each space on the board a new space class object is called and stored in a columns array.  All ten columns are in turn stored in a spaces array. This method is used to access a particular space on the board in other functions.
     spaces() {
       let spaces = [];
       for (let x = 1; x <= this.columns; x++) {
